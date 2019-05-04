@@ -1,0 +1,10 @@
+.card.text-center
+  .card-body
+    h1 サボりチェッカー
+    
+    = "今日は#{@today.strftime('%Y/%m/%d')}です。"
+    br
+    - if @result
+      = "素数な日です。サボりましょう！"
+    - else
+      = "素数な日ではありません。社畜しましょう...。"
